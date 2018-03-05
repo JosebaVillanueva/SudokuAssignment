@@ -19,10 +19,12 @@
 # This function must return a list with the information needed to 
 # solve the problem.
 # (Depending on the problem, it should receive or not parameters)
-initialize.problem = function(){
-  estadoinicial <- read.csv(file = "sudoku-1.txt", header = FALSE, sep=",")
-  sudoku = matrix()
+initialize.problem = function(file){
+  estadoinicial <- read.csv(file, header = FALSE, sep=",")
   problem = list()
+  problem$state.initial = estadoinicial
+  problem$state.final = NULL
+  problem$actions.list = 
   return(problem)
 }
 
