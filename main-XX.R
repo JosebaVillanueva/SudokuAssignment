@@ -45,7 +45,7 @@ source("methods/method-5 Depth.First.Search.GS.R")
 # =======================================================================
 # Initialization of the problem (This is a general code, you must addapt it)
 
-problem   = initialize.problem("data/sudoku-1.txt")
+problem   = initialize.problem( file = "data/sudoku-2.txt")
 limit     = 2500
 
 bfs       = Breadth.First.Search(problem, limit)

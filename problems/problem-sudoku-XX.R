@@ -20,6 +20,8 @@
 # solve the problem.
 # (Depending on the problem, it should receive or not parameters)
 initialize.problem = function(){
+  estadoinicial <- read.csv(file = "sudoku-1.txt", header = FALSE, sep=",")
+  sudoku = matrix()
   problem = list()
   return(problem)
 }
